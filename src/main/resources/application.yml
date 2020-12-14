@@ -1,0 +1,21 @@
+server:
+	port: 9000
+spring:
+	datasource:
+		url: jdbc:mariadb://localhost:9950/moon
+		hikari:
+			auto-commit: true
+			connection-init-sql: select 1
+			username: 'moon'
+			password: '#moon1234'
+			maximum-pool-size: 30
+			minimub-idle: 10
+	jackson:
+		date-format: yyyy-MM-dd
+		serialization:
+			fail-on-empty-beans: false
+logging:
+	level:
+		root: info
+		org.springframework: debug
+		org.hibernate.type: trace
