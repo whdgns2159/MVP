@@ -1,10 +1,9 @@
 <template>
-
 	<body>
-	<div class="w3-cell-row container">
-		<comp-side-nav />
-		<comp-view />
-	</div>
+		<div class="w3-cell-row container">
+			<comp-side-nav />
+			<comp-view />
+		</div>
 	</body>
 </template>
 <script>
@@ -14,5 +13,5 @@ export default {
 		CompSideNav: () => import('./SideNav'),
 		CompView: () => import('./View'),
 	}
-} 
+}
 </script>
